@@ -1,10 +1,10 @@
 import re
 from telegram import Update, Bot
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import Updater, CommandHandler, MessageHandler, CallbackContext, filters
 from telethon import TelegramClient
 
 # Replace these with your credentials
-API_ID = 29199461  # Get this from https://my.telegram.org
+API_ID = API_ID = 29199461  # Get this from https://my.telegram.org   # Get this from https://my.telegram.org
 API_HASH = '5d5c0797293505649aaa30aa8d1af14a'  # Get this from https://my.telegram.org
 BOT_TOKEN = '8180740607:AAFxS6mFw8tZyhItsfamQyl8iJc9NWp3kvU'  # Get this from BotFather
 
@@ -120,7 +120,7 @@ def main():
     dispatcher.add_handler(CommandHandler("status", status))
 
     # Add message handler for processing messages from source group
-    dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
+    dispatcher.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
     # Start polling for updates
     print("Bot is running...")

@@ -7,8 +7,8 @@ API_HASH = '5d5c0797293505649aaa30aa8d1af14a'
 SESSION_NAME = 'auto_buy_session'
 
 # List of source group IDs
-SOURCE_GROUP_IDS = ['@buybotttttt', '@buybottttt']  # Add more groups as needed
-TROJAN_BOT_ID = '@bonkbot_bot'
+SOURCE_GROUP_IDS = ['@lfg_meme_x', '@Rothtrenches']  # Add more groups as needed
+TROJAN_BOT_ID = '@solana_trojanbot'
 
 SOLANA_ADDRESS_REGEX = r'\b[1-9A-HJ-NP-Za-km-z]{32,44}\b'
 
